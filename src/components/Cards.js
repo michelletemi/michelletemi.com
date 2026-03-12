@@ -1,26 +1,26 @@
-import React from 'react'
-import CardItem from './CardItem'
+import React from 'react';
+import CardItem from './CardItem';
 import './Cards.css';
 
 function Cards() {
   return (
     <div className='cards'>
       <h1>Get started in Tech</h1>
-      <div className="cards__container">
-        <div className="cards__wrapper">
-          <ul className="cards__items">
+      <div className='cards__container'>
+        <div className='cards__wrapper'>
+          <ul className='cards__items'>
             <CardItem
               src='images/img-2.jpg'
-              text="Explore Your Options"
+              text='Explore Your Options'
               label='Explore'
               path='/resources'
             />
             <CardItem
-              src="images/img-1.jpg"
-              text="Learn C#"
+              src='images/img-1.jpg'
+              text='Learn C#'
               label='Learn'
               path='/resources'
-            />       
+            />
           </ul>
           <ul className='cards__items'>
             <CardItem
@@ -41,13 +41,11 @@ function Cards() {
               label='Products'
               path='/resources'
             />
-          </ul>          
+          </ul>
         </div>
-
       </div>
-
     </div>
-  )
+  );
 }
 
-export default Cards
+export default Cards;

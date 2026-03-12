@@ -10,7 +10,9 @@ function Footer() {
         <p className='footer-subscription-heading'>
           Join the Tech newsletter to receive the latest news and updates
         </p>
-        <p className='footer-subscription-text'>You can unsubscribe at any time.</p>
+        <p className='footer-subscription-text'>
+          You can unsubscribe at any time.
+        </p>
         <form className='footer-form'>
           <input
             type='email'
@@ -57,10 +59,7 @@ function Footer() {
         >
           <FaLinkedin />
         </a>
-        <a
-          className='social-icon-link'
-          href='mailto:you@example.com'
-        >
+        <a className='social-icon-link' href='mailto:you@example.com'>
           <FaEnvelope />
         </a>
       </section>

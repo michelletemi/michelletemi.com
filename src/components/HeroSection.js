@@ -5,12 +5,15 @@ import chibiImage from '../assets/mychibi-transparentbg.png'; // Adjust path if 
 
 function HeroSection() {
   return (
-    <div className="hero-container">
-      <div className="hero-content">
-        <img src={chibiImage} alt="Chibi Michelle" className="hero-chibi" />
-        <div className="hero-text">
+    <div className='hero-container'>
+      <div className='hero-content'>
+        <img src={chibiImage} alt='Chibi Michelle' className='hero-chibi' />
+        <div className='hero-text'>
           <h1>Hi, I'm Michelle Mamudu</h1>
-          <p>A Software Engineer passionate about creative tech, inclusive teams & building meaningful products.</p>
+          <p>
+            A Software Engineer passionate about creative tech, inclusive teams
+            & building meaningful products.
+          </p>
         </div>
       </div>
     </div>
@@ -18,15 +21,6 @@ function HeroSection() {
 }
 
 export default HeroSection;
-
-
-
-
-
-
-
-
-
 
 /*import './HeroSection.css';
 import '../App.css';
