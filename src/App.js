@@ -3,7 +3,6 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 import Navbar from './components/Navbar';
-import Hero from './components/HeroSection';
 import TrustBar from './components/TrustBar';
 import Story from './components/pages/Story';
 import Tool from './components/pages/Tool';
