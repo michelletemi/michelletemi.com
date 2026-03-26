@@ -1,56 +1,41 @@
 import React from 'react';
 import './HeroSection.css';
-import '../App.css';
-import chibiImage from '../assets/mychibi-transparentbg.png'; // Adjust path if needed
+import chibiImage from '../assets/mychibi-transparentbg.png';
+
 
 function HeroSection() {
   return (
-    <div className='hero-container'>
-      <div className='hero-content'>
-        <img src={chibiImage} alt='Chibi Michelle' className='hero-chibi' />
-        <div className='hero-text'>
-          <h1>Hi, I'm Michelle Mamudu</h1>
-          <p>
-            A Software Engineer passionate about creative tech, inclusive teams
-            & building meaningful products.
-          </p>
+    <section className='hero'>
+      <div>
+        <div className='hero-eyebrow'>Software Engineer · Fintech · Career Coach</div>
+        <div className='hero-h1-row'>
+          <img src={chibiImage} alt='Chibi Michelle' className='hero-chibi' />
+          <h1>From support<br />tickets to <em>shipping</em><br />production code.</h1>
+        </div>
+        <p className='hero-desc'>
+          I'm a mid-level software engineer at a UK fintech — and I didn't take the traditional route. I help career changers and aspiring developers break into tech, build real portfolios, and land roles they actually want.
+        </p>
+        <div className='hero-actions'>
+          <a href='#tool' className='btn-primary'>Try the free budget tool →</a>
+          <a href='#story' className='btn-secondary'>Read my story</a>
         </div>
       </div>
-    </div>
+      <div className='hero-badge-col'>
+        <div className='badge-card'>
+          <div className='badge-num'>3+</div>
+          <div className='badge-label'>Years in fintech engineering</div>
+        </div>
+        <div className='badge-card'>
+          <div className='badge-num'>£0</div>
+          <div className='badge-label'>Cost to start with free tools</div>
+        </div>
+        <div className='badge-card'>
+          <div className='badge-num'>MEng</div>
+          <div className='badge-label'>Civil Engineering → Software</div>
+        </div>
+      </div>
+    </section>
   );
 }
 
 export default HeroSection;
-
-/*import './HeroSection.css';
-import '../App.css';
-import { Button } from './Button';
-
-function HeroSection() {
-    return (
-        <div className='hero-container'>
-            <video src="/videos/video-2.mp4" autoPlay loop muted />
-            <h1>WELCOME TO MY WORLD</h1>
-            <p>I'm Michou, a passionate developer</p>
-            <div className='hero-btns'>
-                <Button
-                    className='btns'
-                    buttonStyle='btn--primary'
-                    buttonSize='btn--large'
-                >
-                    GET STARTED
-                </Button>
-                <Button
-                    className='btns'
-                    buttonStyle='btn--outline'
-                    buttonSize='btn--large'
-                >
-                    WATCH TRAILER <i className='far fa-play-circle' />
-                </Button>
-            </div>
-
-        </div>
-    )
-}
-
-export default HeroSection;*/

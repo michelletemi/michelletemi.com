@@ -2,7 +2,7 @@ import React from 'react';
 import '../../App.css';
 
 export default function resources() {
-  return <h1 className='portifolio'>Resources</h1>;
+  return <h1 className='resources'>Resources</h1>;
 }
 
 // export default function Blog() {

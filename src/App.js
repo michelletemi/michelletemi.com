@@ -1,14 +1,19 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
 import './App.css';
-import Home from './components/pages/Home';
-import Blog from './components/pages/Blog';
-import Portfolio from './components/pages/Portfolio';
-import Resources from './components/pages/Resources';
-import Contact from './components/pages/Contact';
-import MailingList from './components/pages/MailingList';
+
+import Navbar from './components/Navbar';
+import Hero from './components/HeroSection';
+import TrustBar from './components/TrustBar';
+import Story from './components/pages/Story';
+import Tool from './components/pages/Tool';
+import Services from './components/pages/Services';
+import Newsletter from './components/pages/Newsletter';
 import Footer from './components/Footer';
+
+
+import Home from './components/pages/Home';
+import Resources from './components/pages/Resources';
 
 function App() {
   return (
@@ -18,11 +23,11 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
-          <Route path='/blog' element={<Blog />} />
-          <Route path='/portfolio' element={<Portfolio />} />
+          <Route path='/story' element={<Story />} />
+          <Route path='/tool' element={<Tool />} />
+          <Route path='/services' element={<Services />} />
           <Route path='/resources' element={<Resources />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/join-mailing-list' element={<MailingList />} />
+          <Route path='/newsletter' element={<Newsletter />} />
         </Routes>
         <Footer />
       </Router>

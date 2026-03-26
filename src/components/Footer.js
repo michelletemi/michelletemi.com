@@ -1,75 +1,18 @@
-import React from 'react';
 import './Footer.css';
-import { Link } from 'react-router-dom';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <div className='footer-container'>
-      <section className='footer-subscription'>
-        <p className='footer-subscription-heading'>
-          Join the Tech newsletter to receive the latest news and updates
-        </p>
-        <p className='footer-subscription-text'>
-          You can unsubscribe at any time.
-        </p>
-        <form className='footer-form'>
-          <input
-            type='email'
-            name='email'
-            placeholder='Your Email'
-            className='footer-input'
-          />
-          <button className='btn btn--outline'>Subscribe</button>
-        </form>
-      </section>
-
-      <div className='footer-links'>
-        <div className='footer-link-wrapper'>
-          <div className='footer-link-items'>
-            <h2>About</h2>
-            <Link to='/about'>About Me</Link>
-            <Link to='/portfolio'>Portfolio</Link>
-            <Link to='/resources'>Resources</Link>
-          </div>
-          <div className='footer-link-items'>
-            <h2>Support</h2>
-            <Link to='/contact'>Contact</Link>
-            <Link to='/faq'>FAQ</Link>
-            <Link to='/consultation'>Consultation</Link>
-          </div>
-        </div>
-      </div>
-
-      {/* 🌐 Social Icons Section */}
-      <section className='footer-social'>
-        <a
-          className='social-icon-link'
-          href='https://github.com/yourgithub'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <FaGithub />
-        </a>
-        <a
-          className='social-icon-link'
-          href='https://linkedin.com/in/yourlinkedin'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <FaLinkedin />
-        </a>
-        <a className='social-icon-link' href='mailto:you@example.com'>
-          <FaEnvelope />
-        </a>
-      </section>
-
-      <section className='footer-bottom'>
-        <small className='website-rights'>
-          © {new Date().getFullYear()} Michou Dev. All rights reserved.
-        </small>
-      </section>
-    </div>
+    <footer>
+      <a href='#' className='footer-logo'>Michelle</a>
+      <ul className='footer-links'>
+        <li><a href='#story'>Story</a></li>
+        <li><a href='#tool'>Free Tool</a></li>
+        <li><a href='#services'>Services</a></li>
+        <li><a href='https://linkedin.com' target='_blank' rel='noopener noreferrer'>LinkedIn</a></li>
+        <li><a href='https://youtube.com' target='_blank' rel='noopener noreferrer'>YouTube</a></li>
+      </ul>
+      <div className='footer-copy'>© 2026 — All rights reserved</div>
+    </footer>
   );
 }
 
