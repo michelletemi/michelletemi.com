@@ -32,19 +32,19 @@ export default function Services() {
           <div className='service-icon'>🎯</div>
           <div className='service-title'>Career Coaching</div>
           <div className='service-desc'>1:1 sessions for career changers breaking into tech. CV, strategy, and accountability from someone who's done it.</div>
-          <div className='service-price'>From £100/session <span>→ Book a call</span></div>
+          <div className='service-price'>From £25/session <span>→ Book a call</span></div>
         </a>
         <a href='#newsletter' className='service-card'>
           <div className='service-icon'>💬</div>
           <div className='service-title'>Mock Interviews</div>
           <div className='service-desc'>Technical and behavioural interview prep. Real feedback on what hiring managers at fintechs actually look for.</div>
-          <div className='service-price'>£80/session <span>→ Book a slot</span></div>
+          <div className='service-price'>£15/session <span>→ Book a slot</span></div>
         </a>
         <a href='#newsletter' className='service-card'>
           <div className='service-icon'>📘</div>
           <div className='service-title'>Guides & E-Books</div>
           <div className='service-desc'>Practical field guides for career changers — from customer service to software engineer, and everything in between.</div>
-          <div className='service-price'>From £15 <span>→ Browse library</span></div>
+          <div className='service-price'>From £5.99 <span>→ Browse library</span></div>
         </a>
       </div>
     </section>

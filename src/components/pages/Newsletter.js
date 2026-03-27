@@ -30,7 +30,7 @@ export default function Newsletter() {
         <div className={`fade-in${visible ? ' visible' : ''}`}>
           <h2 className='email-heading'>Get the resources<br />I wish I had <em>earlier.</em></h2>
           <p className='email-desc'>
-            Join the newsletter for honest career advice, free tools, and practical guides — written by someone actively working in tech, not just writing about it.
+            Join the newsletter for honest career advice, free tools, and practical guides - written by someone actively working in tech, not just writing about it.
           </p>
           <ul className='email-perks'>
             <li>Monthly free tools and templates</li>
