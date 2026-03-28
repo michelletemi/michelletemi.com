@@ -1,3 +1,5 @@
+import { Link } from 'react-router';
+
 function resources() {
   return (
     <section className='section resources-section' id='resources'>
@@ -45,10 +47,9 @@ function resources() {
           </div>
         </div>
 
-        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
-        <a href='#' className='resources-cta'>
+        <Link to='/resources' className='resources-cta'>
           Browse all resources →
-        </a>
+        </Link>
       </div>
     </section>
   );

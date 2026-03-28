@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 import './HeroSection.css';
 import chibiImage from '../assets/mychibi-transparentbg.png';
 
@@ -26,12 +27,12 @@ function HeroSection() {
           want.
         </p>
         <div className='hero-actions'>
-          <a href='#resources' className='btn-primary'>
+          <Link to='/resources' className='btn-primary'>
             Explore free resources →
-          </a>
-          <a href='#story' className='btn-secondary'>
+          </Link>
+          <Link to='/story' className='btn-secondary'>
             Read my story
-          </a>
+          </Link>
         </div>
       </div>
       <div className='hero-badge-col'>

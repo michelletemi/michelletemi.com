@@ -2,11 +2,11 @@ import { Link } from 'react-router';
 import './Navbar.css';
 
 const links = [
-  { label: 'Story', href: '#story' },
-  //{ label: 'Tool', href:'#tool'},
-  { label: 'Services', href: '#services' },
-  { label: 'Newsletter', href: '#newsletter' },
-  { label: 'Resources', href: '#resources' },
+  { label: 'Story', to: '/story' },
+  //{ label: 'Tool', to:'/tool'},
+  { label: 'Services', to: '/services' },
+  { label: 'Newsletter', to: '/newsletter' },
+  { label: 'Resources', to: '/resources' },
 ];
 
 function Navbar() {

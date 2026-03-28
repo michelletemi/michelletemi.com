@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router';
 
 export default function Services() {
   const ref = useRef(null);
@@ -40,7 +41,7 @@ export default function Services() {
         </h2>
       </div>
       <div className={`services-grid fade-in${visible ? ' visible' : ''}`}>
-        <a href='#newsletter' className='service-card'>
+        <Link to='/newsletter' className='service-card'>
           <div className='service-icon'>🎯</div>
           <div className='service-title'>Career Coaching</div>
           <div className='service-desc'>
@@ -50,8 +51,8 @@ export default function Services() {
           <div className='service-price'>
             From £25/session <span>→ Book a call</span>
           </div>
-        </a>
-        <a href='#newsletter' className='service-card'>
+        </Link>
+        <Link to='/newsletter' className='service-card'>
           <div className='service-icon'>💬</div>
           <div className='service-title'>Mock Interviews</div>
           <div className='service-desc'>
@@ -61,8 +62,8 @@ export default function Services() {
           <div className='service-price'>
             £15/session <span>→ Book a slot</span>
           </div>
-        </a>
-        <a href='#newsletter' className='service-card'>
+        </Link>
+        <Link to='/newsletter' className='service-card'>
           <div className='service-icon'>📘</div>
           <div className='service-title'>Guides & E-Books</div>
           <div className='service-desc'>
@@ -72,7 +73,7 @@ export default function Services() {
           <div className='service-price'>
             From £5.99 <span>→ Browse library</span>
           </div>
-        </a>
+        </Link>
       </div>
     </section>
   );

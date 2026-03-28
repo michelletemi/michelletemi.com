@@ -1,20 +1,21 @@
+import { Link } from 'react-router';
 import './Footer.css';
 
 function Footer() {
   return (
     <footer>
-      <a href='/' className='footer-logo'>
+      <Link to='/' className='footer-logo'>
         Michelle
-      </a>
+      </Link>
       <ul className='footer-links'>
         <li>
-          <a href='#story'>Story</a>
+          <Link to='/story'>Story</Link>
         </li>
         <li>
-          <a href='#tool'>Free Tool</a>
+          <Link to='/tool'>Free Tool</Link>
         </li>
         <li>
-          <a href='#services'>Services</a>
+          <Link to='/services'>Services</Link>
         </li>
         <li>
           <a
