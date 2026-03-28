@@ -763,57 +763,6 @@ body {
   color: var(--ink2);
 }
 
-/* ── FOOTER ── */
-footer {
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 40px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-@media (max-width: 680px) {
-  footer {
-    padding: 32px 24px;
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-.footer-logo {
-  font-family: var(--font-serif);
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--ink);
-  text-decoration: none;
-}
-
-.footer-links {
-  display: flex;
-  gap: 24px;
-  list-style: none;
-}
-
-.footer-links a {
-  font-size: 13px;
-  color: var(--ink3);
-  text-decoration: none;
-  transition: color 0.15s;
-}
-
-.footer-links a:hover {
-  color: var(--ink);
-}
-
-.footer-copy {
-  font-size: 12px;
-  color: var(--ink3);
-  font-family: var(--font-mono);
-}
-
 /* ── ANIMATIONS ── */
 .fade-in {
   opacity: 0;
