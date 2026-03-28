@@ -1,6 +1,3 @@
-import React from 'react';
-import '../../App.css';
-
 function resources() {
   return (
     <section className='section resources-section' id='resources'>
@@ -49,7 +46,7 @@ function resources() {
         </div>
 
         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
-        <a href='#' class='resources-cta'>
+        <a href='#' className='resources-cta'>
           Browse all resources →
         </a>
       </div>

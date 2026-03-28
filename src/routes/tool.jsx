@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-import '../../App.css';
 
 export default function Tool() {
   const ref = useRef(null);

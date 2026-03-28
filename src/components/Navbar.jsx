@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import './Navbar.css';
 
 const links = [
@@ -12,19 +12,19 @@ const links = [
 function Navbar() {
   return (
     <nav className='navbar'>
-      <Link to='/home' className='nav-logo'>
+      <Link to='/' className='nav-logo'>
         Michelle Digital Platform
       </Link>
       <ul className='nav-links'>
-        {links.map(({ label, href }) => (
-          <li key={href}>
-            <a href={href}>{label}</a>
+        {links.map(({ label, to }) => (
+          <li key={to}>
+            <Link to={to}>{label}</Link>
           </li>
         ))}
       </ul>
-      <a href='#resources' className='nav-cta'>
+      <Link to='/resources' className='nav-cta'>
         Get free resources →
-      </a>
+      </Link>
     </nav>
   );
 }

@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-import '../../App.css';
 
 export default function Newsletter() {
   const ref = useRef(null);

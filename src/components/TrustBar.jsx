@@ -1,5 +1,3 @@
-import '../App.css';
-
 function TrustBar() {
   return (
     <section className='trust-bar'>
