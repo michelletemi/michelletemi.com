@@ -1,5 +1,4 @@
-import React from 'react';
-import CardItem from './CardItem';
+import CardItem from './CardItem.jsx';
 import './Cards.css';
 
 function Cards() {
@@ -36,7 +35,7 @@ function Cards() {
               path='/contact'
             />
             <CardItem
-              src='images\digi-product.png'
+              src='images/digi-product.png'
               text='Templates & Digital Products'
               label='Products'
               path='/resources'

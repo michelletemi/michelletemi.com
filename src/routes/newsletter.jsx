@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-import '../../App.css';
 
 export default function Newsletter() {
   const ref = useRef(null);
@@ -28,9 +27,14 @@ export default function Newsletter() {
     <div className='email-section' id='newsletter'>
       <div className='email-inner' ref={ref}>
         <div className={`fade-in${visible ? ' visible' : ''}`}>
-          <h2 className='email-heading'>Get the resources<br />I wish I had <em>earlier.</em></h2>
+          <h2 className='email-heading'>
+            Get the resources
+            <br />I wish I had <em>earlier.</em>
+          </h2>
           <p className='email-desc'>
-            Join the newsletter for honest career advice, free tools, and practical guides - written by someone actively working in tech, not just writing about it.
+            Join the newsletter for honest career advice, free tools, and
+            practical guides - written by someone actively working in tech, not
+            just writing about it.
           </p>
           <ul className='email-perks'>
             <li>Monthly free tools and templates</li>
@@ -42,10 +46,18 @@ export default function Newsletter() {
         {!submitted ? (
           <div className={`email-form fade-in${visible ? ' visible' : ''}`}>
             <label className='form-label'>Your name</label>
-            <input type='text' className='form-input' placeholder='First name' />
+            <input
+              type='text'
+              className='form-input'
+              placeholder='First name'
+            />
 
             <label className='form-label'>Email address</label>
-            <input type='email' className='form-input' placeholder='you@example.com' />
+            <input
+              type='email'
+              className='form-input'
+              placeholder='you@example.com'
+            />
 
             <label className='form-label'>Where are you now?</label>
             <select className='form-select'>
@@ -57,7 +69,9 @@ export default function Newsletter() {
               <option>Already in tech, levelling up</option>
             </select>
 
-            <button className='btn-submit' onClick={handleSubmit}>Join the newsletter →</button>
+            <button className='btn-submit' onClick={handleSubmit}>
+              Join the newsletter →
+            </button>
             <div className='form-small'>Free forever. Unsubscribe anytime.</div>
           </div>
         ) : (
